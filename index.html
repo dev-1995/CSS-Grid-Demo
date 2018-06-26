@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E Commerce </title>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body onload="">
+	<div class="grid">
+		<div class="nav">
+			<span>E-Commerce</span>
+		</div>
+		<div class="filter">
+			<a href="#" onclick="applyFilter(this)" class="filterItem">Jeans</a>
+			<a href="#" onclick="applyFilter(this)" class="filterItem">Sarees</a>
+			<a href="#" onclick="applyFilter(this)" class="filterItem">Pants</a>
+			<a href="#" onclick="applyFilter(this)" class="filterItem">Tops</a>
+			<a href="#" onclick="applyFilter(this)" class="filterItem">Tshirts</a>
+			<select name="" onchange="sortItems(this.value)" class="sort">
+				<option value="" selected="selected">Sort</option>
+				<option value="price">Price</option>
+				<option value="score">Score</option>
+			</select>
+		</div>
+			<div class="itemList" id="itemList">
+				
+			</div>
+		</div>
+	
+</div>
+<script src="app.js"></script>
+</body>
+</html>
